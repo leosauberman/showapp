@@ -20,4 +20,16 @@
         android:stretchMode="columnWidth"
         android:gravity="center"/>
 
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/grid"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:elevation="8dp"
+        app:backgroundTint="@color/colorPrimary" />
+
 </RelativeLayout>

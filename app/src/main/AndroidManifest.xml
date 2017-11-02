@@ -24,7 +24,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".SeriesActivity"></activity>
+        <activity android:name=".SeriesActivity" />
+        <activity android:name=".TelaAddSerie"></activity>
     </application>
 
 </manifest>

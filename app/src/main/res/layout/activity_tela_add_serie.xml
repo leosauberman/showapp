@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.series.showapp.TelaAddSerie">
+
+
+    <EditText
+        android:id="@+id/ed_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:text="Titulo" />
+
+    <TextView
+        android:id="@+id/tv_sinopse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sinopse:"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_below="@id/ed_titulo"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+    <EditText
+        android:id="@+id/ed_sinopse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_sinopse"
+        android:layout_toEndOf="@+id/tv_sinopse"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ed_sinopse"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+    </Spinner>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Adicionar foto"
+        android:textColor="@color/white"
+        android:layout_below="@id/spinner"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_act_addSerie"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:elevation="8dp"
+        app:backgroundTint="@color/colorPrimary" />
+
+</RelativeLayout>
