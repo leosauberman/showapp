@@ -15,4 +15,16 @@
         completions."
     </string>
     <string name="auth_failed">Falha no login</string>
+
+    <string name="comedia">Comedia</string>
+    <string name="acao">Ação</string>
+    <string name="cult">Cult</string>
+    <string name="drama">Drama</string>
+    <string name="heroi">Herói</string>
+    <string name="romance">Romance</string>
+    <string name="terror">Terror</string>
+    <string name="documentario">Documentário</string>
+    <string name="animacao">Animação</string>
+    <string name="outros">Outrso</string>
+
 </resources>
