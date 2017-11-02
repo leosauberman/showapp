@@ -8,7 +8,7 @@
 
 
     <EditText
-        android:id="@+id/ed_titulo"
+        android:id="@+id/et_titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -24,11 +24,11 @@
         android:visibility="visible"
         android:textColor="@color/black"
         android:textSize="18dp"
-        android:layout_below="@id/ed_titulo"
+        android:layout_below="@id/et_titulo"
         android:layout_margin="@dimen/activity_horizontal_margin"/>
 
     <EditText
-        android:id="@+id/ed_sinopse"
+        android:id="@+id/et_sinopse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/tv_sinopse"
@@ -41,19 +41,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/ed_sinopse"
+        android:layout_below="@id/et_sinopse"
         android:layout_margin="@dimen/activity_horizontal_margin">
 
     </Spinner>
 
     <Button
+        android:id="@+id/add_ft_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_margin="@dimen/activity_horizontal_margin"
         android:background="@color/colorPrimary"
         android:text="Adicionar foto"
-        android:textColor="@color/white"
-        android:layout_below="@id/spinner"
-        android:layout_margin="@dimen/activity_horizontal_margin"/>
+        android:textColor="@color/white" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_add_act_addSerie"
