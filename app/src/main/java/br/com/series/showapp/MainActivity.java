@@ -13,6 +13,13 @@ public class MainActivity extends AppCompatActivity {
 
     private Button adicionar;
 
+    private Integer[] mNames = {
+            R.string.acao, R.string.comedia,
+            R.string.cult, R.string.drama,
+            R.string.heroi, R.string.romance,
+            R.string.terror
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-
+                Intent i = new Intent(MainActivity.this, SeriesActivity.class);
+                i.putExtra("categoria", mNames[position].toString());
+                startActivity(i);
             }
         });
 
