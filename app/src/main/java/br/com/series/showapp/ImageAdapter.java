@@ -37,11 +37,11 @@ public class ImageAdapter extends BaseAdapter {
             return 0;
         }
 
-    public static class ViewHolder
-    {
-        public ImageView imgView;
-        public TextView txtView;
-    }
+        public static class ViewHolder
+        {
+            public ImageView imgView;
+            public TextView txtView;
+        }
 
         // create a new ImageView for each item referenced by the Adapter
         @Override
