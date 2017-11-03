@@ -11,13 +11,13 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button adicionar;
 
     private Integer[] mNames = {
             R.string.acao, R.string.comedia,
             R.string.cult, R.string.drama,
             R.string.heroi, R.string.romance,
-            R.string.terror
+            R.string.terror, R.string.documentario,
+            R.string.animacao, R.string.outros
     };
 
     @Override
@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        adicionar = (Button) findViewById(R.id.fab_add);
 
         final GridView gridview = (GridView) findViewById(R.id.grid);
         gridview.setAdapter(new ImageAdapter(this, MainActivity.this));
@@ -35,13 +34,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, SeriesActivity.class);
                 i.putExtra("categoria", mNames[position].toString());
                 startActivity(i);
-            }
-        });
-
-        adicionar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, TelaAddSerie.class));
             }
         });
 

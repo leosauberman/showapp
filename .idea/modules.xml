@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:\Users\gapeb\Downloads\showapp\showapp\Showapp.iml" filepath="C:\Users\gapeb\Downloads\showapp\showapp\Showapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Showapp.iml" filepath="$PROJECT_DIR$/Showapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\gapeb\Downloads\showapp\showapp\app\app.iml" filepath="C:\Users\gapeb\Downloads\showapp\showapp\app\app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/showapp.iml" filepath="$PROJECT_DIR$/showapp.iml" />
     </modules>
   </component>
 </project>

@@ -24,8 +24,6 @@ import java.util.List;
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecyclerHolder> {
     private ArrayList<Serie> arrayList;
     private Context c;
-    private String categoria;
-
 
     class RecyclerHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         ImageView image = (ImageView)  itemView.findViewById(R.id.imageView);
@@ -38,8 +36,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             itemView.setTag(itemView);
             itemView.setOnClickListener(this);
 
-            Intent i = ((Activity)c).getIntent();
-            categoria = i.getExtras().getString("categoria");
         }
 
         @Override
@@ -60,7 +56,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
     @Override
     public void onBindViewHolder(RecyclerAdapter.RecyclerHolder holder, int position) {
-        holder.name.setText(categoria);
+        holder.name.setText(arrayList.get(position).getNome());
+        holder.desc.setText(arrayList.get(position).getDesc());
     }
 
     @Override

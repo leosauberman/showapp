@@ -25,6 +25,19 @@
     <string name="terror">Terror</string>
     <string name="documentario">Documentário</string>
     <string name="animacao">Animação</string>
-    <string name="outros">Outrso</string>
+    <string name="outros">Outros</string>
+
+    <string-array name="categorias">
+        <item>Comédia</item>
+        <item>Ação</item>
+        <item>Cult</item>
+        <item>Drama</item>
+        <item>Herói</item>
+        <item>Romance</item>
+        <item>Terror</item>
+        <item>Documentário</item>
+        <item>Animação</item>
+        <item>Outros</item>
+    </string-array>
 
 </resources>
